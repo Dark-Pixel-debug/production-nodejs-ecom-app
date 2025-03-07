@@ -38,7 +38,7 @@ app.use(cookieParser())
 
 //route
 //routes
-// import testRoute from '../server/routes/testRoute.js'
+import testRoute from './server/routes/testRoute.js'
 import userRoutes from './routes/userRoutes.js'
 import productRoutes from './routes/productRoutes.js'
 import categoryRoutes from './routes/categoryRoutes.js'
