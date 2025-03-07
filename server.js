@@ -61,4 +61,6 @@ const PORT = process.env.PORT || 8080
 app.listen(PORT, ()=>{
     console.log(`Server Running on PORT: ${process.env.PORT} on ${process.env.NODE_ENV} mode`.bgMagenta)
 })
+
+
 export default app;
