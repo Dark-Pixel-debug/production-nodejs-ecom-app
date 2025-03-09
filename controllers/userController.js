@@ -7,6 +7,7 @@ export const registerController = async(req,res) => {
     try {
         const {name,email,password,address,city,country,phone,answer} = req.body
         //validation
+        console.log("Received Data:", req.body);
         if(!name || !email || !password || !address || !city || !country || !phone || !answer){
             return res.status(500).send({
                 success: false,
