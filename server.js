@@ -14,14 +14,7 @@ import mongoSanitize from 'express-mongo-sanitize'
 dotenv.config()
 app.set("trust proxy", 1);
 
-// ✅ Setup rate limiting (example)
-const limiter = rateLimit({
-  windowMs: 15 * 60 * 1000, // 15 minutes
-  max: 100, // Limit each IP to 100 requests per window
-  message: "Too many requests, please try again later.",
-});
 
-app.use(limiter);
 //database connection call
 connectDB()
 
