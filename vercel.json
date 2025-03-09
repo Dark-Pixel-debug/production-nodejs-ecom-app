@@ -1,13 +1,13 @@
 {
   "version": 2,
   "builds": [
-    {
-      "src": "server.js",
-      "use": "@vercel/node"
-    }
+    { "src": "server.js", "use": "@vercel/node" }
   ],
   "routes": [
-    { "src": "/(.*)", "dest": "server.js" ,
-        "headers": { "X-Forwarded-For": "on" }
+    {
+      "src": "/(.*)",
+      "dest": "/server.js",
+      "headers": { "X-Forwarded-For": "on" }
+    }
   ]
 }
