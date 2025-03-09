@@ -12,7 +12,6 @@ import mongoSanitize from 'express-mongo-sanitize'
 
 // .evn config
 dotenv.config()
-app.set("trust proxy", 1);
 
 
 //database connection call
